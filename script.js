@@ -1,14 +1,15 @@
 // Good Luck 💪🏾
-function zeroAndOne(input) {
-    if (input === 'zero'  && input !== 0) {
-      return '0';
-    } else if (input === 'one' && input !== 'ones') {
-      return '1';
-    } else {
-      return input;
-    }
+function ZeroAndOne (arr){
+  let newArr=[]
+  for(let i =0; i<arr.length; i++){
+  if(arr[i]=== "Zero"){
+  newArr.push(0)
+}
+  else if(arr[i]=== "One"){
+  newArr.push(1)
   }
-  
-  console.log(zeroAndOne('zero','zero',));
-  console.log(zeroAndOne('one','one')); 
-  
+  }
+  return newArr.join("")
+  }
+  console.log(ZeroAndOne(["one","Zero","Zero","One"]) )
+  console.log(ZeroAndOne(["Zero", "ONE", "one", "Zero"]))
